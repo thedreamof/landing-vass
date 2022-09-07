@@ -1,3 +1,4 @@
+/* --- Variables */
 :root {
     --background-1: #ffffff;
     --background-2: #f4f5f5;
@@ -12,13 +13,75 @@
     --text-light: #b8b8b8;
 }
 
+
+/* --- Main */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-html, body {
+html {
     min-height: 100vh;
-    font-family: sans-serif;
+    overflow: hidden;
 }
+
+body {
+    height: 100vh;
+    font-family: 'Courier New';
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+/* --- End Main */
+
+/* --- Scrollbar */
+::-webkit-scrollbar{
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--basic);
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: lightgray;
+    border-radius: 20px;
+}
+/* --- End Scrollbar */
+
+
+/* --- Bulma basic */
+.button {
+    min-width: 80px;
+    border-radius: 0px;
+}
+
+.is-primary {
+    background: var(--primary) !important;
+}
+
+.has-background-primary {
+    background: var(--primary) !important;
+}
+
+.has-text-primary {
+    color: var(--primary) !important;
+}
+/* --- End Bulma basic */
+
+
+/* --- Generals */
+.gap-10 {
+    gap: 10px;
+}
+
+.gap-15 {
+    gap: 15px;
+}
+
+.gap-20 {
+    gap: 20px;
+}
+/* --- End Generals */
